@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['"Inria Serif"', "serif"],
+            paragraph: ['"Inria Sans"', "sans-serif"],
+          },
+        },
+      },
+    };
+
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Inria+Serif&display=swap" rel="stylesheet" />
+  <title>Document</title>
+  <style>
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(60px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="font-sans bg-[#fdfaf5]">
+  <!-- Header -->
+  <header class="bg-[#fdfaf5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-2">
+          <img src="./eivaa icon.png" alt="Logo" class="h-10" />
+          <span class="font-semibold tracking-wide hidden">HOMESS</span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex space-x-6 items-center text-sm font-medium">
+          <a href="#" class="text-[#b66a00]">HOME</a>
+          <a href="#" class="hover:text-[#b66a00]">ABOUT US</a>
+          <a href="#" class="hover:text-[#b66a00]">GALLERY</a>
+          <a href="#" class="hover:text-[#b66a00]">PROJECTS</a>
+          <a href="#" class="hover:text-[#b66a00]">CONTACT</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-800 focus:outline-none text-2xl">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden flex-col space-y-3 pb-4">
+        <a href="#" class="block text-sm text-[#b66a00]">HOME</a>
+        <a href="#" class="block text-sm hover:text-[#b66a00]">ABOUT US</a>
+        <a href="#" class="block text-sm hover:text-[#b66a00]">GALLERY</a>
+        <a href="#" class="block text-sm hover:text-[#b66a00]">PROJECTS</a>
+        <a href="#" class="block text-sm hover:text-[#b66a00]">CONTACT</a>
+      </div>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative max-w-[1450px] mx-auto h-[90vh] w-full overflow-hidden bg-[#fdfaf5] py-4">
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+      <source src="./video2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center">
+      <div class="text-white px-4 md:px-12 max-w-screen-2xl mt-32">
+        <!-- First Line -->
+        <h1 class="text-3xl md:text-5xl font-heading font-medium tracking-wide">
+          WELCOME TO EIVAA HOMES
+        </h1>
+
+        <!-- Second Line -->
+        <h1 class="text-2xl md:text-5xl font-heading font-medium text-yellow-500 mt-2 tracking-wide">
+          Crafting Dreams, Building Trust
+        </h1>
+
+        <!-- Paragraph -->
+        <p class="text-lg md:text-xl my-4 w-[90%] max-w-2xl font-paragraph">
+          At Eivaa Homess, we don’t just build houses—we create homes that
+          reflect comfort, quality, and a lasting promise of value. Based in
+          Coimbatore, we specialize in thoughtfully designed residential
+          communities that bring your vision of modern living to life.
+        </p>
+
+        <!-- Button -->
+        <a href="#"
+          class="border border-white text-white px-5 py-2 inline-block hover:bg-white hover:text-black transition">
+          ENQUIRE NOW
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--Tailor your Dream-->
+  <div class="mt-[130px] mb-[200px]  flex md:flex-row sm:flex-col sm:items-center flex-col items-center">
+    <div
+      class="md:w-[600px] sm:w-[80%] w-[80%] xl:ml-[100px] lg:ml-[100px] md:ml-[50px] flex items-center relative animate-[slideInLeft_0.7s_ease-out_forwards]">
+      <video class="md:w-[100%] sm:w-[100%] w-[100%] h-[300px] lg:h-[680px] md:h-[680px] object-cover"
+        src="./3773486-hd_1920_1080_30fps.mp4" autoplay loop muted playsinline></video>
+      <button
+        class="absolute sm:bottom-0 bottom-0 md:bottom-0 lg:bottom-0 border border-white bg-white flex items-center"><img
+          src="./—Pngtree—play video icon graphic design_3990515.png" class="w-[30px]" />WATCH VIDEO</button>
+    </div>
+
+    <div class="md:w-[600px] lg:w-[60%] sm:w-[80%] w-[80%] lg:mt-[60px] md:mt-[50px] sm:mt-[50px] mt-[50px] mb-[20px]">
+      <div
+        class="bg-white border border-white p-10 xl:pr-[100px] xl:mr-[100px] lg:mr-[100px] md:mr-[30px] lg:ml-[-100px] md:ml-[-70px] relative z-10 shadow-xl">
+        <h3 class="text-sm text-[#7A7A7A] font-semibold">WELCOME TO EIVAA HOMESS</h3>
+        <h1 class="text-3xl mt-[10px]">TAILOR YOUR <span class="text-yellow-500">DREAM HOUSE</span></h1>
+        <h1 class="text-3xl mt-[3px]">WITH US</h1>
+        <p class="mt-[20px] text-[#7A7A7A] opacity-0 animate-[slideUp_0.7s_ease-out_0.2s_forwards] text-justify">
+          At EIVAA HOMESS, we understand that every home is a reflection of its owner. Our personalized design solutions
+          are crafted to align with your unique vision and lifestyle. Whether you have a specific layout in mind, desire
+          luxurious finishes, or wish to integrate eco-friendly elements, our expert team will ensure your dream home
+          becomes a reality. Experience bespoke living spaces where comfort, style, and functionality come together
+          effortlessly.
+        </p>
+
+      </div>
+      <div
+        class="flex sm:flex-row flex-col sm:justify-around xl:mt-[100px] lg:mt-[60px] md:mt-[40px] sm:mt-[40px] mt-[40px]  md:w-[80%]">
+        <div class="flex flex-col items-center">
+          <h1 class="text-4xl">08+</h1>
+          <p class="text-[#7A7A7A]">Years of experience</p>
+        </div>
+        <div class="flex flex-col items-center sm:mt-[0px] mt-[30px]">
+          <h1 class="text-4xl">50+</h1>
+          <p class="text-[#7A7A7A]">Projects completed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--why choose us-->
+  <div class="bg-[#14212b] mb-[50px] pt-[80px] pl-[40px] sm:pl-[120px] md:pl-[70px] lg:pl-[90px] xl:pl-[120px]">
+    <div class="sm:w-[60%] md:w-[42%] lg:w-[32%] xl:w-[28%]">
+      <h1 class="font-heading text-2xl sm:text-3xl text-white">WHY CHOOSE US?</h1>
+      <P class="font-paragraph text-[#7A7A7A] mt-[20px] w-[80%] sm:w-full text-justify text-sm">At EIVAA HOMESS we stand
+        by
+        offering a truly
+        personalized and luxurious home-building
+        experience.Here's why our
+        clients choose us</P>
+    </div>
+    <div class="flex flex-col sm:flex-col md:flex-row  mt-[40px]">
+      <div
+        class="border border-white border-0 bg-[#E9DED1] md:w-[45%] sm:w-[80%] w-[90%] md:h-[200px] mr-[20px] lg:px-[30px] lg:py-[50px] md:px-[10px] md:py-[20px] sm:px-[30px] sm:py-[50px] px-[30px] py-[50px]">
+        <h1 class="font-heading text-2xl opacity-0 animate-[slideUp_0.7s_ease-out_0.2s_forwards]">Tailor-Made
+          Excellence
+        </h1>
+        <p
+          class="text-[#7A7A7A] pt-[10px] font-paragraph opacity-0 animate-[slideUp_0.7s_ease-out_0.2s_forwards] text-justify">
+          Every
+          home we build reflects our client's vision. Our tailor-made infrastructure service ensures
+          your specific design preferences are seamlessly
+          integrated into your dream home.</p>
+      </div>
+      <div
+        class="border border-white border-0 bg-[#E9DED1] md:w-[45%] sm:w-[80%] w-[90%] md:h-[200px] lg:px-[30px] lg:py-[50px] md:px-[10px] md:py-[20px] sm:mt-[20px] md:mt-[0px] sm:px-[30px] sm:py-[50px] mt-[20px] px-[30px] py-[50px]">
+        <h1 class="font-heading text-2xl opacity-0 animate-[slideUp_0.7s_ease-out_0.8s_forwards]">Sustainable
+          Solutions
+        </h1>
+        <p
+          class="text-[#7A7A7A] pt-[10px] font-paragraph opacity-0 animate-[slideUp_0.7s_ease-out_0.8s_forwards] text-justify">
+          We
+          incorporate eco-friendly designs and materials, ensuring
+          luxury without compromising on
+          sustainability.</p>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-col md:flex-row  mt-[20px] pb-[80px]">
+      <div
+        class="border border-white border-0 bg-[#E9DED1] md:w-[45%] sm:w-[80%] w-[90%] md:h-[200px] mr-[20px] lg:px-[30px] lg:py-[50px] md:px-[10px] md:py-[20px] sm:px-[30px] sm:py-[50px] px-[30px] py-[50px]">
+        <h1 class="font-heading text-2xl opacity-0 animate-[slideUp_0.7s_ease-out_1.6s_forwards]">Transparent Process
+        </h1>
+        <p
+          class="text-[#7A7A7A] pt-[10px] font-paragraph opacity-0 animate-[slideUp_0.7s_ease-out_1.6s_forwards] text-justify">
+          From
+          the initial concept to the final handover, we keep you
+          informed every step of the way. Our
+          clear communication ensures a stress-free experience.</p>
+      </div>
+      <div
+        class="border border-white border-0 bg-[#E9DED1] md:w-[45%] sm:w-[80%] w-[90%] md:h-[200px] lg:px-[30px] lg:py-[50px] md:px-[10px] md:py-[20px] sm:mt-[20px] md:mt-[0px] sm:px-[30px] sm:py-[50px] mt-[20px] px-[30px] py-[50px]">
+        <h1 class="font-heading text-2xl opacity-0 animate-[slideUp_0.7s_ease-out_2.4s_forwards]">Client-Centric
+          Approach</h1>
+        <p
+          class="text-[#7A7A7A] pt-[10px] font-paragraph opacity-0 animate-[slideUp_0.7s_ease-out_2.4s_forwards] text-justify">
+          Your
+          satisfaction is our ultimate priority. We collaborate
+          closely with you to ensure your
+          home not only meets but exceeds your expectations.</p>
+      </div>
+    </div>
+  </div>
+  <!--photo section-->
+  <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row h-auto h-screen mt-[90px]">
+    <div class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group 
+         hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]">
+      <img src="House-Construction-Process-1.webp" class="h-full w-full object-cover" />
+      <div
+        class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+        <h1>Initial Planning</h1>
+        <p class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+          Our architects and designers develop creative concepts that balance aesthetics, functionality, and your unique
+          requirements.
+        </p>
+      </div>
+    </div>
+    <div class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group 
+         hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]">
+      <img src="eagle_in_the_rain_amin_moazzen_iran-1.jpg" class="h-full w-full object-cover" />
+      <div
+        class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+        <h1>Concept Design</h1>
+        <p class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+          Our architects and designers develop creative concepts that balance aesthetics, functionality, and your unique
+          requirements.
+        </p>
+      </div>
+    </div>
+    <div class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group 
+         hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]">
+      <img src="Role-of-craftmanship-in-building-home.jpg" class="h-full w-full object-cover" />
+      <div
+        class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+        <h1>Execution and Craftmanship</h1>
+        <p class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+          Skilled professionals bring the design to life with meticulous attention to detail and quality craftsmanship.
+        </p>
+      </div>
+    </div>
+    <div class="relative w-full h-[25vh] md:w-1/4 md:h-[90%] transition-all duration-500 overflow-hidden group 
+         hover:h-[45%] md:hover:h-[90%] md:hover:w-[45%]">
+      <img src="house-keys-handover-new-home-ownership-real-estate-transaction-366714002.webp"
+        class="h-full w-full object-cover" />
+      <div
+        class="absolute md:bottom-25 md:left-10 sm:bottom-10 sm:left-10 bottom-10 left-10 text-white lg:text-3xl md:text-xl sm:text-xl text-xl translate-y-full transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+        <h1>Handover & Beyond</h1>
+        <p class="text-base mt-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+          We ensure a smooth handover and provide ongoing support, making sure you feel at home from day one.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="md:mt-[-74px]">
+    <div class="bg-[#14212b] text-4xl py-[120px] flex flex-col items-center text-center">
+      <h1 class="text-white">
+        <span class="text-yellow-500">DIFFERENT</span> BACKROUNDS.
+        <span class="text-yellow-500"> ONE</span> VISION.
+      </h1>
+      <h1 class="text-white">
+        THE FOUNDATION OF <span class="text-yellow-500">EIVAA HOMESS.</span>
+      </h1>
+    </div>
+  </div>
+
+  <!--architect vision-->
+  <div class="mt-[80px]">
+    <div class="flex flex-col sm:flex-col md:flex-row items-center justify-center">
+      <div class="md:ml-[10px] lg:ml-[20px] xl:ml-[0px] flex justify-center">
+        <img src="./1_NJnwvAKvtgjmeFlmM4BfFg.png" class="w-[80%] sm:w-full" />
+      </div>
+      <div class="md:ml-[50px]">
+        <h1 class="text-3xl font-heading sm:mt-[30px] text-center sm:text-center md:text-start mt-[30px]">Architect's
+          Vision</h1>
+        <p class="text-[#7A7A7A] mt-[10px] font-paragraph text-center sm:text-start">An architect dreamed of spaces that
+          tell stories, not just
+          shelter people.</p>
+        <h1 class="mt-[30px] text-3xl text-[#7A7A7A] font-heading text-center sm:text-center md:text-start">Civil
+          Engineer's Precision</h1>
+        <p class="mt-[10px] text-[#7A7A7A] font-paragraph text-center sm:text-start">A structural expert wanted more
+          than strength - he wanted
+          grace in every</p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center mt-[60px]">
+      <h2 class="text-2xl text-center lg:text-left">
+        " We didn't just start a company. We built in purpose.
+        <br class="md:block lg:hidden" />
+        <span class="text-yellow-500">Quality is in our DNA. "</span>
+      </h2>
+      <p class="mt-[10px]">By Founders</p>
+    </div>
+
+  </div>
+</body>
+
+</html>
